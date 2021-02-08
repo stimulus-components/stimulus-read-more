@@ -4,7 +4,7 @@
 [![](https://img.shields.io/npm/v/stimulus-read-more.svg)](https://www.npmjs.com/package/stimulus-read-more)
 [![](https://github.com/stimulus-components/stimulus-read-more/workflows/Lint/badge.svg)](https://github.com/stimulus-components/stimulus-read-more)
 [![](https://img.shields.io/github/license/stimulus-components/stimulus-read-more.svg)](https://github.com/stimulus-components/stimulus-read-more)
-[![Netlify Status](https://api.netlify.com/api/v1/badges/80f85acb-2a15-4326-9bd1-92a461e53c22/deploy-status)](https://stimulus-read-more.netlify.com)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/e0c5cf44-d938-4675-870d-fd50b58fca72/deploy-status)](https://stimulus-read-more.netlify.com)
 
 ## Getting started
 
