@@ -3,8 +3,8 @@ import { Controller } from 'stimulus'
 export default class extends Controller {
   static targets = ['content', 'full']
   static values = {
-    showText: String,
-    hideText: String
+    moreText: String,
+    lessText: String
   }
 
   connect () {
@@ -19,14 +19,14 @@ export default class extends Controller {
   show (event) {
     this.open = true
 
-    event.target.innerHTML = this.hideTextValue
+    event.target.innerHTML = this.lessTextValue
     this.contentTarget.innerHTML = this.fullTarget.innerHTML
   }
 
   hide (event) {
     this.open = false
 
-    event.target.innerHTML = this.showTextValue
+    event.target.innerHTML = this.moreTextValue
     this.contentTarget.innerHTML = this.originalContent
   }
 }
