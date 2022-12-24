@@ -2,13 +2,11 @@ import { Controller } from '@hotwired/stimulus'
 
 export default class extends Controller {
   open: boolean
-  originalContent: string
   contentTarget: HTMLElement
-  fullTarget: HTMLElement
   moreTextValue: string
   lessTextValue: string
 
-  static targets: Array<string> = ['content', 'full']
+  static targets: string[] = ['content']
   static values = {
     moreText: String,
     lessText: String
@@ -16,7 +14,6 @@ export default class extends Controller {
 
   connect (): void {
     this.open = false
-    this.originalContent = this.contentTarget.innerHTML
   }
 
   toggle (event: Event): void {
@@ -28,7 +25,7 @@ export default class extends Controller {
 
     const target = event.target as HTMLElement
     target.innerHTML = this.lessTextValue
-    this.contentTarget.innerHTML = this.fullTarget.innerHTML
+    this.contentTarget.style.setProperty('--read-more-line-clamp', "'unset'")
   }
 
   hide (event: Event): void {
@@ -36,6 +33,6 @@ export default class extends Controller {
 
     const target = event.target as HTMLElement
     target.innerHTML = this.moreTextValue
-    this.contentTarget.innerHTML = this.originalContent
+    this.contentTarget.style.removeProperty('--read-more-line-clamp')
   }
 }

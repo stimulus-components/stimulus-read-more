@@ -6,6 +6,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [4.0.0] - 2022-12-23
+
+### Chore
+
+- **Breaking** Using CSS variable and [line-clamp](https://developer.mozilla.org/en-US/docs/Web/CSS/-webkit-line-clamp).
+
 ## [3.0.0] - 2021-10-08
 
 ### Chore
